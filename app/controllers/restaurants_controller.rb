@@ -13,6 +13,9 @@ class RestaurantsController < ApplicationController
     redirect_to restaurants_path(@restaurant)
   end
 
+  def show
+    @restaurant = Restaurant.find(params[:id])
+  end
   private
 
   def restaurant_params
