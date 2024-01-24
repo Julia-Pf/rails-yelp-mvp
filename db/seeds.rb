@@ -18,3 +18,5 @@ require "faker"
     phone_number: Faker::Number.leading_zero_number(digits: 10)
   )
 end
+
+Review.create(content: "test review here", rating: "3", restaurant_id: "2")
